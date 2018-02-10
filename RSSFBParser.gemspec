@@ -14,9 +14,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Gem that allows to get feed from both rss and facebook page"
   spec.homepage      = "https://github.com/storm2513/RSSFBParser"
   spec.license       = "MIT"
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files         = `git ls-files -z`.split("\x0")
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
