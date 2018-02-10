@@ -26,6 +26,7 @@ Or install it yourself as:
 RSSFBParser.parse(your_amazing_url_to_rss_or_facebook_page)
 RSSFBParser.parse(your_amazing_url_to_rss_or_facebook_page, posts_limit)
 ```
+Returns array of hashes with 'title', 'description' and 'url' keys.
 
 If you want to get posts from facebook page, you should specify facebook access token:
 ```
